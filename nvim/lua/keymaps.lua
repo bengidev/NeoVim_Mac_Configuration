@@ -38,7 +38,6 @@ keymap("n", "<leader>e", ":Lex 30<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
-
 -- Insert --
 -- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
@@ -50,18 +49,19 @@ keymap("v", "<", "<gv^", opts)
 keymap("v", ">", ">gv^", opts)
 
 -- Move text up and down
-keymap("n", "<M-j>", ":m .+1<CR>==", opts)
-keymap("n", "<M-k>", ":m .-2<CR>==", opts)
+keymap("v", "<M-j>", ":m .+1<CR>==", opts)
+keymap("v", "<M-k>", ":m .-2<CR>==", opts)
 
 -- Keep yank values after paste
-keymap("n", "p", "_dP", opts)
+keymap("v", "p", "_dP", opts)
+keymap("n", "p", " _d""p ", opts)
 
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("x", "K", ":m '<-2<CR>gv=gv", opts)
-keymap("x", "<A-j>", ":m '>+1<CR>gv=gv", opts)
-keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
+keymap("x", "<M-j>", ":m '>+1<CR>gv=gv", opts)
+keymap("x", "<M-k>", ":m '<-2<CR>gv=gv", opts)
 
 -- Terminal --
 -- Better terminal navigation
