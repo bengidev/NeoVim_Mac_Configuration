@@ -54,7 +54,6 @@ keymap("v", "<M-k>", ":m .-2<CR>==", opts)
 
 -- Keep yank values after paste
 keymap("v", "p", "_dP", opts)
-keymap("n", "p", " _d""p ", opts)
 
 -- Visual Block --
 -- Move text up and down
