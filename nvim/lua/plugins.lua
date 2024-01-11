@@ -61,6 +61,7 @@ return packer.startup(function(use)
   --use {"folke/which-key.nvim"}
 
   -- Colorschemes
+  use { "lunarvim/colorschemes" } -- A bunch of colorschemes you can try out
   --use { "folke/tokyonight.nvim" }
   --use { "lunarvim/darkplus.nvim" }
 
