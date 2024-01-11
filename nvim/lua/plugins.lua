@@ -66,16 +66,16 @@ return packer.startup(function(use)
   --use { "lunarvim/darkplus.nvim" }
 
   -- Cmp 
-  --use { "hrsh7th/nvim-cmp" } -- The completion plugin
-  --use { "hrsh7th/cmp-buffer" } -- buffer completions
-  --use { "hrsh7th/cmp-path" } -- path completions
-  --use { "saadparwaiz1/cmp_luasnip" } -- snippet completions
-  --use { "hrsh7th/cmp-nvim-lsp" }
-  --use { "hrsh7th/cmp-nvim-lua" }
+  use { "hrsh7th/nvim-cmp" } -- The completion plugin
+  use { "hrsh7th/cmp-buffer" } -- buffer completions
+  use { "hrsh7th/cmp-path" } -- path completions
+  use { "saadparwaiz1/cmp_luasnip" } -- snippet completions
+  use { "hrsh7th/cmp-nvim-lsp" }
+  use { "hrsh7th/cmp-nvim-lua" }
 
   -- Snippets
-  --use { "L3MON4D3/LuaSnip" } --snippet engine
-  --use { "rafamadriz/friendly-snippets" } -- a bunch of snippets to use
+  use { "L3MON4D3/LuaSnip" } --snippet engine
+  use { "rafamadriz/friendly-snippets" } -- a bunch of snippets to use
 
   -- LSP
   --use { "neovim/nvim-lspconfig" } -- enable LSP
