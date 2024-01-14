@@ -85,7 +85,7 @@ return packer.startup(function(use)
 	use({ "RRethy/vim-illuminate" })
 
 	-- Telescope
-	--use { "nvim-telescope/telescope.nvim" }
+	use({ "nvim-telescope/telescope.nvim" })
 
 	-- Treesitter
 	--use { "nvim-treesitter/nvim-treesitter" }
