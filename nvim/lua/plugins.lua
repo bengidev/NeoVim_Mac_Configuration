@@ -44,8 +44,8 @@ return packer.startup(function(use)
 	use({ "nvim-lua/popup.nvim" }) -- An implementation of the Popup API from vim in Neovim
 	use({ "nvim-lua/plenary.nvim" }) -- Useful lua functions used by lots of plugins
 	use({ "tpope/vim-dispatch", opt = true, cmd = { "Dispatch", "Make", "Focus", "Start" } }) -- Lazy loading Load on specific commands
-	-- use { 'rstacruz/vim-closer' } -- Simple plugins can be specified as strings
-	--use { "windwp/nvim-autopairs" } -- Autopairs, integrates with both cmp and treesitter
+	use({ "rstacruz/vim-closer" }) -- Simple plugins can be specified as strings
+	use({ "windwp/nvim-autopairs" }) -- Autopairs, integrates with both cmp and treesitter
 	--use { "numToStr/Comment.nvim" }
 	--use { "JoosepAlviste/nvim-ts-context-commentstring" }
 	--use { "kyazdani42/nvim-web-devicons" }
