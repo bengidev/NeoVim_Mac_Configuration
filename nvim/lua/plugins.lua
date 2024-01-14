@@ -46,8 +46,8 @@ return packer.startup(function(use)
 	use({ "tpope/vim-dispatch", opt = true, cmd = { "Dispatch", "Make", "Focus", "Start" } }) -- Lazy loading Load on specific commands
 	use({ "rstacruz/vim-closer" }) -- Simple plugins can be specified as strings
 	use({ "windwp/nvim-autopairs" }) -- Autopairs, integrates with both cmp and treesitter
-	--use { "numToStr/Comment.nvim" }
-	--use { "JoosepAlviste/nvim-ts-context-commentstring" }
+	use({ "numToStr/Comment.nvim" })
+	use({ "JoosepAlviste/nvim-ts-context-commentstring" })
 	--use { "kyazdani42/nvim-web-devicons" }
 	--use { "kyazdani42/nvim-tree.lua" }
 	--use { "akinsho/bufferline.nvim" }
